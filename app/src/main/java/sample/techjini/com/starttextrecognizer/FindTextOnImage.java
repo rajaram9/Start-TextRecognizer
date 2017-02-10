@@ -27,20 +27,6 @@ public class FindTextOnImage extends Activity {
         Bitmap imageWithTextBitmap = BitmapFactory.decodeFile(selectedImagePath);
         ((ImageView) findViewById(R.id.image)).setImageBitmap(imageWithTextBitmap);
 
-//        TextRecognizer textRecognizer = new TextRecognizer.Builder(this).build();
-
-//        Frame frame = new Frame.Builder().setBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.sample)).build();
-//        SparseArray<TextBlock> items = textRecognizer.detect(frame);
-//        StringBuilder stringBuilder = new StringBuilder();
-
-//        for (int i = 0; i < items.size(); ++i) {
-//            TextBlock item = items.valueAt(i);
-//            if (item != null && item.getValue() != null) {
-//                stringBuilder.append(item.getValue());
-//                Log.d("Processor", "Text detected! " + item.getValue());
-//            }
-//        }
-
         ((TextView) findViewById(R.id.text)).setText("something something will come");
     }
 }
